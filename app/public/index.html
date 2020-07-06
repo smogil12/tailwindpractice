@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="text/javascript">
+      var turnToConfig = {
+        locale: "en_US",
+        pageId: "order-confirmation-page",
+      };
+      window.TurnToCmd =
+        window.TurnToCmd ||
+        function () {
+          (TurnToCmd.q = TurnToCmd.q || []).push(arguments);
+        };
+    </script>
+
+    <script
+      src="https://widgets.turnto.com/v5/widgets/qM9izDb9x6YaGMxsite/js/turnto.js"
+      async
+    ></script>
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -11,6 +27,34 @@
   </head>
 
   <body>
+    <script type="text/javascript">
+      TurnToCmd("feed.send", {
+        orderId: 56754,
+        email: "email@address.com",
+        postalCode: "12312",
+        firstName: "First",
+        lastName: "Last",
+        nickName: "nickName",
+        items: [
+          {
+            title: "Epic React knit sweater",
+            url:
+              "https://www.site.com/epic-react-knit-sweater-abc75M/AQ0001-001",
+            itemImageUrl:
+              "https://i.site.com/epic-react-knit-sweater-abc75M/AQ0001-001.jpg",
+            sku: "AQ0001-001",
+          },
+          {
+            title: "Lunar Boot '18",
+            url: "https://www.site.com/lunar-boot-defG1d/BR0001-001",
+            itemImageUrl:
+              "https://www.site.com/lunar-boot-defG1d/BR0001-001.jpg",
+            lineItemId: "b",
+            sku: "BR0001-001",
+          },
+        ],
+      });
+    </script>
     <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <svg
