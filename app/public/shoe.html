@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var turnToConfig = {
+        locale: "en_US",
+        pageId: "pdp-page",
+        sku: "AQ0001-001",
+        reviewsList: {
+          // onFinish: function(){}
+        },
+      };
+      window.TurnToCmd =
+        window.TurnToCmd ||
+        function () {
+          (TurnToCmd.q = TurnToCmd.q || []).push(arguments);
+        };
+    </script>
+    <script
+      src="https://widgets.turnto.com/v5/widgets/qM9izDb9x6YaGMxsite/js/turnto.js"
+      async
+    ></script>
+  </head>
+  <body>
+    <div class="test">
+      <img
+        src="https://www.duluthtrading.com/dw/image/v2/BBNM_PRD/on/demandware.static/-/Sites-dtc-master-catalog/default/dw463156de/images/large/94202_PEN.jpg?sw=313&sh=313&sm=fit"
+        alt="Placeholder"
+      />
+    </div>
+    <div id="tt-reviews-summary"></div>
+    <div id="tt-reviews-list"></div>
+  </body>
+</html>
