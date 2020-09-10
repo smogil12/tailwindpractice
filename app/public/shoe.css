@@ -9,8 +9,3 @@
 #tt-qa-list {
   margin-bottom: 100px;
 }
-
-.tt-c-ratings-breakdown__rating-number,
-.tt-c-ratings-breakdown__percent {
-  color: greenyellow !important;
-}
