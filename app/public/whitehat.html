@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hat</title>
+    <script>
+      var turnToConfig = {
+        locale: "en_US",
+        pageId: "pdp-page",
+        sku: "AQ0001-005",
+        reviewsList: {
+          // onFinish: function(){}
+        },
+      };
+      window.TurnToCmd =
+        window.TurnToCmd ||
+        function () {
+          (TurnToCmd.q = TurnToCmd.q || []).push(arguments);
+        };
+    </script>
+    <script
+      src="https://widgets.turnto.com/v5/widgets/qM9izDb9x6YaGMxsite/js/turnto.js"
+      async
+    ></script>
+    <link rel="stylesheet" href="hat.css" />
+  </head>
+  <body>
+    <h1>test</h1>
+    <div id="tt-reviews-summary"></div>
+    <div id="tt-reviews-list"></div>
+
+    <div id="tt-subdimension-teaser"></div>
+
+    <div id="tt-instant-answers-widget"></div>
+    <div id="tt-qa-list"></div>
+  </body>
+</html>
