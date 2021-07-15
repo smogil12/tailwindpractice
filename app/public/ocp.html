@@ -20,23 +20,32 @@
       src="https://widgets.turnto.com/v5/widgets/qM9izDb9x6YaGMxsite/js/turnto.js"
       async
     ></script>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
     <script type="text/javascript">
       TurnToCmd("feed.send", {
-        orderId: 123456,
-        email: "spencer@turnto.com",
-        firstName: "spencer",
-        lastName: "mogil",
+        orderId: 1234,
+        email: "email@address.com",
+        postalCode: "12312",
+        firstName: "First",
+        lastName: "Last",
+        nickName: "nickName",
         items: [
           {
-            title: "Spencers sweater",
-            sku: "ABCDE",
+            title: "Epic React knit sweater",
+            url: "https://www.site.com/epic-react-knit-sweater-abc75M/AQ0001-001",
+            itemImageUrl:
+              "https://i.site.com/epic-react-knit-sweater-abc75M/AQ0001-001.jpg",
+            sku: "AQ0001-001",
+          },
+          {
+            title: "Lunar Boot '18",
+            url: "https://www.site.com/lunar-boot-defG1d/BR0001-001",
+            itemImageUrl:
+              "https://www.site.com/lunar-boot-defG1d/BR0001-001.jpg",
+            lineItemId: "b",
+            sku: "BR0001-001",
           },
         ],
       });

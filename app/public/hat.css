@@ -15,3 +15,13 @@
 .tt-o-byline__author {
   display: none !important;
 }
+
+.tt-c-ratings-breakdown__rating-number,
+.tt-c-ratings-breakdown__percent {
+  color: greenyellow !important;
+}
+
+.tt-o-button--primary,
+button.tt-o-button--primary {
+  background-color: red !important;
+}
